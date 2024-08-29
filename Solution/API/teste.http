@@ -1,0 +1,7 @@
+### Requisição para a raiz da API
+GET http://localhost:5252/
+
+### Requisição para a segunda funcionalidade da API
+
+GET http://localhost:5252/segundafunc
+
