@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\autologon\\Documents\\JS\\dev-software\\Solution\\Teste\\Teste.csproj": {}
+    "C:\\Users\\autologon\\Documents\\js\\DSV 29-08\\dev-software\\Solution\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\autologon\\Documents\\JS\\dev-software\\Solution\\Teste\\Teste.csproj": {
+    "C:\\Users\\autologon\\Documents\\js\\DSV 29-08\\dev-software\\Solution\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\autologon\\Documents\\JS\\dev-software\\Solution\\Teste\\Teste.csproj",
-        "projectName": "Teste",
-        "projectPath": "C:\\Users\\autologon\\Documents\\JS\\dev-software\\Solution\\Teste\\Teste.csproj",
+        "projectUniqueName": "C:\\Users\\autologon\\Documents\\js\\DSV 29-08\\dev-software\\Solution\\API\\API.csproj",
+        "projectName": "API",
+        "projectPath": "C:\\Users\\autologon\\Documents\\js\\DSV 29-08\\dev-software\\Solution\\API\\API.csproj",
         "packagesPath": "C:\\Users\\autologon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\autologon\\Documents\\JS\\dev-software\\Solution\\Teste\\obj\\",
+        "outputPath": "C:\\Users\\autologon\\Documents\\js\\DSV 29-08\\dev-software\\Solution\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,7 +52,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.7, )"
+              "version": "[8.0.6, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

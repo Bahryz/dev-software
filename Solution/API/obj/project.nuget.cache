@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PKn2Hm7Xnek=",
+  "dgSpecHash": "zdq/dZ799jo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\autologon\\Documents\\JS\\dev-software\\Solution\\Teste\\Teste.csproj",
+  "projectFilePath": "C:\\Users\\autologon\\Documents\\js\\DSV 29-08\\dev-software\\Solution\\API\\API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\autologon\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.7\\microsoft.aspnetcore.openapi.8.0.7.nupkg.sha512",
+    "C:\\Users\\autologon\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.6\\microsoft.aspnetcore.openapi.8.0.6.nupkg.sha512",
     "C:\\Users\\autologon\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\autologon\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\autologon\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
