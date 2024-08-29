@@ -5,5 +5,15 @@ GET http://localhost:5252/
 
 GET http://localhost:5252/segundafunc
 
-GET http://localhost:5252/retornaendereco
+###
+
+GET http://localhost:5252/saudacao/{{Pedro}}
+
+###
+
+GET http://localhost:5252/retornacadastro
+
+###
+
+
 
