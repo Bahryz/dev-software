@@ -5,3 +5,5 @@ GET http://localhost:5252/
 
 GET http://localhost:5252/segundafunc
 
+GET http://localhost:5252/retornaendereco
+
