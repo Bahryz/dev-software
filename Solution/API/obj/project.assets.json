@@ -466,11 +466,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\autologon\\Documents\\js\\dev-software\\Solution\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\autologon\\Desktop\\Nova pasta\\dev-software\\Solution\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\autologon\\Documents\\js\\dev-software\\Solution\\API\\API.csproj",
+      "projectPath": "C:\\Users\\autologon\\Desktop\\Nova pasta\\dev-software\\Solution\\API\\API.csproj",
       "packagesPath": "C:\\Users\\autologon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\autologon\\Documents\\js\\dev-software\\Solution\\API\\obj\\",
+      "outputPath": "C:\\Users\\autologon\\Desktop\\Nova pasta\\dev-software\\Solution\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

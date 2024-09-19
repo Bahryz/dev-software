@@ -17,7 +17,25 @@ GET http://localhost:5252/retornacadastro
 
 GET http://localhost:5252/produto/listar
 
-###
+### Cadastrar Produto
+// notfound aparece quando vc programou para aparecer mas se nao encontrar a url aparece tbm
+POST http://localhost:5252/produto/cadastrar/
+Content-Type: application/json
 
-POST http://localhost:5252/produto/cadastrar/agua
+{
+    "id" : "4",
+    "nome" : "Bolacha",
+    "preco" : 4.5,
+    "quantidade" : 159
+}
+// {} - objeto :: [] - lista //
+// se vem do corpo da requisicao precisa de um Content-Type
+
+### Requisição pro o google
+
+GET https://www.google.com.br
+
+### Buscar Produto
+
+GET http://localhost:5252/produto/busca/4
 
