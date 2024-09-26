@@ -1,6 +1,9 @@
 using API.Models;
 using Microsoft.AspNetCore.Mvc;
+<<<<<<< HEAD
 using Microsoft.EntityFrameworkCore;
+=======
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
@@ -17,11 +20,16 @@ var produtos = new List<Produto>
 // GET: /produto/listar
 app.MapGet("/produto/listar", () =>
 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e
     if (produtos.Count > 0)
     {
         return Results.Ok(produtos);
     }
     return Results.NotFound();
+<<<<<<< HEAD
 });
 
 // GET: /produto/busca/2
@@ -31,10 +39,27 @@ app.MapGet("/produto/busca/{id}", ([FromRoute] string id) =>
     {
         if (produtoId.Id == id)
         {
+=======
+
+});
+
+// GET: http://localhost:5252/produto/busca/2
+app.MapGet("/produto/busca/{id}", ([FromRoute] string id) =>
+{
+
+    foreach (Produto produtoId in produtos) {
+        if (produtoId.Id == id) {
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e
             return Results.Ok(produtoId);
         }
     }
     return Results.NotFound();
+<<<<<<< HEAD
+=======
+ 
+    
+
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e
 });
 
 // POST: /produto/cadastrar/
@@ -124,7 +149,10 @@ app.MapGet("/retornalist", () =>
 
 app.Run();
 
+<<<<<<< HEAD
 // Modelos
+=======
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e
 public class Produto
 {
     public string? Id { get; set; }
@@ -140,8 +168,14 @@ public class Item
     public int Quantidade { get; set; }
 }
 
+<<<<<<< HEAD
 public class ProdutoDbContext : DbContext
 {
     public ProdutoDbContext(DbContextOptions<ProdutoDbContext> options) : base(options) { }
     public DbSet<Produto> Produtos { get; set; }
 }
+=======
+//Implementar Todas as Funcionalidades do CRUD
+// - Remover Produto
+// - Alterar Produto
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e

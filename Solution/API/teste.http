@@ -28,6 +28,11 @@ Content-Type: application/json
     "preco" : 4.5,
     "quantidade" : 159
 }
+<<<<<<< HEAD
+=======
+// {} - objeto :: [] - lista //
+// se vem do corpo da requisicao precisa de um Content-Type
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e
 
 ### Requisição pro o google
 
@@ -36,6 +41,7 @@ GET https://www.google.com.br
 ### Buscar Produto
 
 GET http://localhost:5252/produto/busca/4
+<<<<<<< HEAD
 
 ### Remover Produto
 
@@ -52,4 +58,6 @@ Content-Type: application/json
   "preco" : 7,
   "quantidade" : 200
 }
+=======
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e
 

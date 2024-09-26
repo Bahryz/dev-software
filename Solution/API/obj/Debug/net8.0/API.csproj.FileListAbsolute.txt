@@ -134,6 +134,7 @@ C:\Users\autologon\Desktop\Nova pasta\dev-software\Solution\API\obj\Debug\net8.0
 C:\Users\autologon\Desktop\Nova pasta\dev-software\Solution\API\obj\Debug\net8.0\API.pdb
 C:\Users\autologon\Desktop\Nova pasta\dev-software\Solution\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 C:\Users\autologon\Desktop\Nova pasta\dev-software\Solution\API\obj\Debug\net8.0\ref\API.dll
+<<<<<<< HEAD
 C:\Users\phbah\OneDrive\Desktop\github\dev-software\Solution\API\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\phbah\OneDrive\Desktop\github\dev-software\Solution\API\bin\Debug\net8.0\appsettings.json
 C:\Users\phbah\OneDrive\Desktop\github\dev-software\Solution\API\bin\Debug\net8.0\API.exe
@@ -263,3 +264,5 @@ C:\Users\phbah\OneDrive\Desktop\github\dev-software\Solution\API\bin\Debug\net8.
 C:\Users\phbah\OneDrive\Desktop\github\dev-software\Solution\API\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\phbah\OneDrive\Desktop\github\dev-software\Solution\API\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\phbah\OneDrive\Desktop\github\dev-software\Solution\API\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+=======
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e

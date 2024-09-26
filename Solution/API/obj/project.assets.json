@@ -2989,11 +2989,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\phbah\\OneDrive\\Desktop\\github\\dev-software\\Solution\\API\\API.csproj",
       "projectName": "API",
       "projectPath": "C:\\Users\\phbah\\OneDrive\\Desktop\\github\\dev-software\\Solution\\API\\API.csproj",
       "packagesPath": "C:\\Users\\phbah\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\phbah\\OneDrive\\Desktop\\github\\dev-software\\Solution\\API\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\autologon\\Desktop\\Nova pasta\\dev-software\\Solution\\API\\API.csproj",
+      "projectName": "API",
+      "projectPath": "C:\\Users\\autologon\\Desktop\\Nova pasta\\dev-software\\Solution\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\autologon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\autologon\\Desktop\\Nova pasta\\dev-software\\Solution\\API\\obj\\",
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\phbah\\AppData\\Roaming\\NuGet\\NuGet.Config"

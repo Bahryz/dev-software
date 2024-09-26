@@ -9,11 +9,19 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = API
 build_property.RootNamespace = API
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\phbah\OneDrive\Desktop\github\dev-software\Solution\API\
+=======
+build_property.ProjectDir = C:\Users\autologon\Desktop\Nova pasta\dev-software\Solution\API\
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = C:\Users\phbah\OneDrive\Desktop\github\dev-software\Solution\API
+=======
+build_property.MSBuildProjectDirectory = C:\Users\autologon\Desktop\Nova pasta\dev-software\Solution\API
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e
 build_property._RazorSourceGeneratorDebug = 
