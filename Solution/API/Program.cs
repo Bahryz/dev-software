@@ -1,39 +1,82 @@
-// Minimal APIs
-// Teste de APIs - Rest Client - Extensão VS Code
-// Postman/Insomnia outras aplicações externas para uso corporativo
 using API.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-// Endpoints - Funcionalidade do Código
-// Request/Requisição - URL e o método/verbo HTTP
 app.MapGet("/", () => "API de Produtos");
 
 var produtos = new List<Produto>
-    {
-        new Produto { Id = "1", Nome = "Café", Preco = 10.50, Quantidade = 100, CriadoEm = DateTime.Now },
-        new Produto { Id = "2", Nome = "Leite", Preco = 5.20, Quantidade = 50, CriadoEm = DateTime.Now },
-        new Produto { Id = "3", Nome = "Açúcar", Preco = 3.80, Quantidade = 200, CriadoEm = DateTime.Now }
-    };
+{
+    new Produto { Id = "1", Nome = "Café", Preco = 10.50, Quantidade = 100, CriadoEm = DateTime.Now },
+    new Produto { Id = "2", Nome = "Leite", Preco = 5.20, Quantidade = 50, CriadoEm = DateTime.Now },
+    new Produto { Id = "3", Nome = "Açúcar", Preco = 3.80, Quantidade = 200, CriadoEm = DateTime.Now }
+};
 
-//GET: /produto/listar
+// GET: /produto/listar
 app.MapGet("/produto/listar", () =>
 {
-    return produtos;
+    if (produtos.Count > 0)
+    {
+        return Results.Ok(produtos);
+    }
+    return Results.NotFound();
 });
 
-app.MapPost("/produto/cadastrar/{nome}/", (string nome) =>
+// GET: /produto/busca/2
+app.MapGet("/produto/busca/{id}", ([FromRoute] string id) =>
 {
-    Produto produto = new Produto();
-    produto.Nome = "nome";
-    produtos.Add(produto);
-    return produtos;
+    foreach (Produto produtoId in produtos)
+    {
+        if (produtoId.Id == id)
+        {
+            return Results.Ok(produtoId);
+        }
+    }
+    return Results.NotFound();
 });
 
-// Corpo Requisição
-// Estudar e entender qual é o código HTTP adequado para um cadastro
+// POST: /produto/cadastrar/
+app.MapPost("/produto/cadastrar", ([FromBody] Produto novoProduto) =>
+{
+    novoProduto.Id = (produtos.Count + 1).ToString(); // Define um ID baseado na contagem
+    novoProduto.CriadoEm = DateTime.Now; // Define a data de criação
+    produtos.Add(novoProduto);
+    return Results.Created(" ", novoProduto);
+});
 
+// DELETE: /produto/remover/2
+app.MapDelete("/produto/remover/{id}", ([FromRoute] string id) =>
+{
+    var produto = produtos.FirstOrDefault(p => p.Id == id);
+    if (produto == null)
+    {
+        return Results.NotFound("Produto não encontrado.");
+    }
+
+    produtos.Remove(produto);
+    return Results.Ok("Produto removido com sucesso.");
+});
+
+// PUT: /produto/alterar/1
+app.MapPut("/produto/alterar/{id}", ([FromRoute] string id, [FromBody] Produto produtoAtualizado) =>
+{
+    var produto = produtos.FirstOrDefault(p => p.Id == id);
+    if (produto == null)
+    {
+        return Results.NotFound("Produto não encontrado.");
+    }
+
+    produto.Nome = produtoAtualizado.Nome;
+    produto.Preco = produtoAtualizado.Preco;
+    produto.Quantidade = produtoAtualizado.Quantidade;
+    produto.CriadoEm = produtoAtualizado.CriadoEm;
+
+    return Results.Ok(produto);
+});
+
+// Funcionalidades adicionais
 app.MapGet("/segundafunc", () => "Segunda funcionalidade");
 
 app.MapGet("/retornaendereco", () =>
@@ -60,13 +103,11 @@ app.MapGet("/retornacadastro", () =>
 
 app.MapGet("/saudacao/{nome}", (string nome) => $"Olá, {nome}!");
 
-
-
 app.MapGet("/retornalist", () =>
 {
     var list = new
     {
-        Id = 1, // Opcional
+        Id = 1,
         Cliente = new
         {
             Nome = "Maria",
@@ -81,20 +122,26 @@ app.MapGet("/retornalist", () =>
     return Results.Ok(list);
 });
 
-// Exercicio
-// Criar novas funcionalidades/Endpoints para receber dados
-// - Pelo URL da requisição
-// - Corpo da requisição
-// - Guardar as informações em uma lista
-
 app.Run();
 
-Produto produto = new Produto();
-produto.Preco = 50;
-Console.WriteLine("Preço: " + produto.Preco);
+// Modelos
+public class Produto
+{
+    public string? Id { get; set; }
+    public string? Nome { get; set; }
+    public double Preco { get; set; }
+    public int Quantidade { get; set; }
+    public DateTime CriadoEm { get; set; }
+}
 
 public class Item
 {
     public string? Produto { get; set; }
     public int Quantidade { get; set; }
+}
+
+public class ProdutoDbContext : DbContext
+{
+    public ProdutoDbContext(DbContextOptions<ProdutoDbContext> options) : base(options) { }
+    public DbSet<Produto> Produtos { get; set; }
 }
