@@ -1,0 +1,63 @@
+### Requisição para a raiz da API
+GET http://localhost:5252/
+
+### Requisição para a segunda funcionalidade da API
+
+GET http://localhost:5252/segundafunc
+
+### Saudar nome especificado
+
+GET http://localhost:5252/saudacao/Pedro
+
+### Retorno de cadastros - Exercicio
+
+GET http://localhost:5252/retornacadastro
+
+### Listar Produtos
+
+GET http://localhost:5252/produto/listar
+
+### Cadastrar Produto
+// notfound aparece quando vc programou para aparecer mas se nao encontrar a url aparece tbm
+POST http://localhost:5252/produto/cadastrar/
+Content-Type: application/json
+
+{
+    "id" : "4",
+    "nome" : "Bolacha",
+    "preco" : 4.5,
+    "quantidade" : 159
+}
+<<<<<<< HEAD
+=======
+// {} - objeto :: [] - lista //
+// se vem do corpo da requisicao precisa de um Content-Type
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e
+
+### Requisição pro o google
+
+GET https://www.google.com.br
+
+### Buscar Produto
+
+GET http://localhost:5252/produto/busca/4
+<<<<<<< HEAD
+
+### Remover Produto
+
+DELETE http://localhost:5252/produto/remover/1
+
+### Alterar Produto
+
+PUT http://localhost:5252/produto/alterar/1
+Content-Type: application/json
+
+{
+  "id" : "1",
+  "nome" : "Arroz",
+  "preco" : 7,
+  "quantidade" : 200
+}
+=======
+>>>>>>> 8b9a85e85a55f820ee17178dc16263e4e2dd691e
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="draftsState">
+      <draftsState>
+        <option name="requests">
+          <list>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;id&quot;: &quot;4&quot;,&#10;  &quot;nome&quot;: &quot;Biscoito&quot;,&#10;  &quot;preco&quot;: 4.50,&#10;  &quot;quantidade&quot;: 30&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="f7087584-4d63-415a-9a54-12eeb7bebef6" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5252/produto/cadastrar" />
+            </requestState>
+          </list>
+        </option>
+      </draftsState>
+    </option>
+    <option name="id" value="07935897-a8bf-4088-a92b-1dc805fa5a05" />
+    <option name="version" value="3" />
+  </component>
+</project>
