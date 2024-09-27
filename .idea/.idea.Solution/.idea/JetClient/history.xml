@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="History">
+    <option name="requestHistoryStates">
+      <list>
+        <requestHistoryState>
+          <option name="dateTime" value="1725563585830" />
+          <option name="id" value="6fddb800-1fd4-4393-9bc8-3fead5a0137a" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;id&quot;: &quot;4&quot;,&#10;  &quot;nome&quot;: &quot;Biscoito&quot;,&#10;  &quot;preco&quot;: 4.50,&#10;  &quot;quantidade&quot;: 30&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="f7087584-4d63-415a-9a54-12eeb7bebef6" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5252/produto/cadastrar" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="TWljcm9zb2Z0LkFzcE5ldENvcmUuSHR0cC5CYWRIdHRwUmVxdWVzdEV4Y2VwdGlvbjogRXhwZWN0ZWQgYSBzdXBwb3J0ZWQgSlNPTiBtZWRpYSB0eXBlIGJ1dCBnb3QgIiIuDQogICBhdCBNaWNyb3NvZnQuQXNwTmV0Q29yZS5IdHRwLlJlcXVlc3REZWxlZ2F0ZUZhY3RvcnkuTG9nLlVuZXhwZWN0ZWRKc29uQ29udGVudFR5cGUoSHR0cENvbnRleHQgaHR0cENvbnRleHQsIFN0cmluZyBjb250ZW50VHlwZSwgQm9vbGVhbiBzaG91bGRUaHJvdykNCiAgIGF0IE1pY3Jvc29mdC5Bc3BOZXRDb3JlLkh0dHAuUmVxdWVzdERlbGVnYXRlRmFjdG9yeS48SGFuZGxlUmVxdWVzdEJvZHlBbmRDb21waWxlUmVxdWVzdERlbGVnYXRlRm9ySnNvbj5nX19UcnlSZWFkQm9keUFzeW5jfDEwMl8wKEh0dHBDb250ZXh0IGh0dHBDb250ZXh0LCBUeXBlIGJvZHlUeXBlLCBTdHJpbmcgcGFyYW1ldGVyVHlwZU5hbWUsIFN0cmluZyBwYXJhbWV0ZXJOYW1lLCBCb29sZWFuIGFsbG93RW1wdHlSZXF1ZXN0Qm9keSwgQm9vbGVhbiB0aHJvd09uQmFkUmVxdWVzdCwgSnNvblR5cGVJbmZvIGpzb25UeXBlSW5mbykNCiAgIGF0IE1pY3Jvc29mdC5Bc3BOZXRDb3JlLkh0dHAuUmVxdWVzdERlbGVnYXRlRmFjdG9yeS48PmNfX0Rpc3BsYXlDbGFzczEwMl8yLjw8SGFuZGxlUmVxdWVzdEJvZHlBbmRDb21waWxlUmVxdWVzdERlbGVnYXRlRm9ySnNvbj5iX18yPmQuTW92ZU5leHQoKQ0KLS0tIEVuZCBvZiBzdGFjayB0cmFjZSBmcm9tIHByZXZpb3VzIGxvY2F0aW9uIC0tLQ0KICAgYXQgTWljcm9zb2Z0LkFzcE5ldENvcmUuRGlhZ25vc3RpY3MuRGV2ZWxvcGVyRXhjZXB0aW9uUGFnZU1pZGRsZXdhcmVJbXBsLkludm9rZShIdHRwQ29udGV4dCBjb250ZXh0KQ0KDQpIRUFERVJTDQo9PT09PT09DQpBY2NlcHQ6ICovKg0KQ29ubmVjdGlvbjoga2VlcC1hbGl2ZQ0KSG9zdDogbG9jYWxob3N0OjUyNTINClVzZXItQWdlbnQ6IEpldENsaWVudA0KQWNjZXB0LUVuY29kaW5nOiBnemlwLCBkZWZsYXRlLCBicg0KQ29udGVudC1MZW5ndGg6IDczDQphcHBsaWNhdGlvbi9qc29uOiANCg==" />
+              <option name="bodyString" value="Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got &quot;&quot;.&#10;   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)&#10;   at Microsoft.AspNetCore.Http.RequestDelegateFactory.&lt;HandleRequestBodyAndCompileRequestDelegateForJson&gt;g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)&#10;   at Microsoft.AspNetCore.Http.RequestDelegateFactory.&lt;&gt;c__DisplayClass102_2.&lt;&lt;HandleRequestBodyAndCompileRequestDelegateForJson&gt;b__2&gt;d.MoveNext()&#10;--- End of stack trace from previous location ---&#10;   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)&#10;&#10;HEADERS&#10;=======&#10;Accept: */*&#10;Connection: keep-alive&#10;Host: localhost:5252&#10;User-Agent: JetClient&#10;Accept-Encoding: gzip, deflate, br&#10;Content-Length: 73&#10;application/json: &#10;" />
+              <option name="code" value="415" />
+              <option name="contentType" value="text/plain; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/plain; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 05 Sep 2024 19:13:05 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Kestrel" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="6fddb800-1fd4-4393-9bc8-3fead5a0137a" />
+              <option name="message" value="Unsupported Media Type" />
+              <option name="prettyResponseType" value="TEXT" />
+              <option name="rawBodyString" value="Microsoft.AspNetCore.Http.BadHttpRequestException: Expected a supported JSON media type but got &quot;&quot;.&#10;   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.UnexpectedJsonContentType(HttpContext httpContext, String contentType, Boolean shouldThrow)&#10;   at Microsoft.AspNetCore.Http.RequestDelegateFactory.&lt;HandleRequestBodyAndCompileRequestDelegateForJson&gt;g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)&#10;   at Microsoft.AspNetCore.Http.RequestDelegateFactory.&lt;&gt;c__DisplayClass102_2.&lt;&lt;HandleRequestBodyAndCompileRequestDelegateForJson&gt;b__2&gt;d.MoveNext()&#10;--- End of stack trace from previous location ---&#10;   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)&#10;&#10;HEADERS&#10;=======&#10;Accept: */*&#10;Connection: keep-alive&#10;Host: localhost:5252&#10;User-Agent: JetClient&#10;Accept-Encoding: gzip, deflate, br&#10;Content-Length: 73&#10;application/json: &#10;" />
+              <option name="size" value="1042" />
+              <option name="time" value="23" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+      </list>
+    </option>
+  </component>
+</project>
